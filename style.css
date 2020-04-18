@@ -1,0 +1,176 @@
+*{
+    padding: 0px;
+    /* margin: 0px; */
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    height: 15vh;
+    width: 100%;
+    /* background-color: green; */
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > .logo{
+    height: 80%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+nav > .logo > img{
+    height: 90%;
+    width: 60%;
+}
+
+nav > .logo > img:hover{
+    cursor: pointer;
+}
+
+nav > .navigate{
+    height: 80%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+nav > .navigate > ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav > .navigate > ul > li{
+    list-style-type: none;
+    font-family: cursive;
+    font-size: large;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+nav > .navigate > ul > li:nth-child(1){
+    color: #ffffff;
+    /* padding: 10px; */
+    border-radius: 5px;
+    background-color: #7F6B00;
+}
+
+nav > .navigate > ul > li:nth-child(1):hover{
+    border-radius: 2px;
+    background-color: black;
+    cursor: pointer;
+}
+
+nav > .navigate > ul > li:hover{
+    border-left: 5px solid #7F6B00;
+    cursor: pointer;
+    color: #7F6B00;
+}
+
+main{
+    height: 90vh;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+}
+
+main > .rank{
+    height: 100%;
+    width: 8%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > .rank > .bar{
+    height: 1%;
+    border: 1px solid #ffffff;
+    padding-bottom: 150px;
+}
+
+main > .rank > h5{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+main > .slider{
+    height: 100%;
+    width: 84%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > .connect{
+    height: 100%;
+    width: 8%;
+    /* border: 2px solid green; */
+}
+
+main > .slider > .currentSlide{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid white; */
+    background: url(./download.png) no-repeat right;
+    background-size: 500px;
+    display: flex;
+}
+
+main > .slider > .currentSlide > .slideText{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 60%;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+main > .slider > .currentSlide > .slideText > h3{
+    font-size: 40px;
+    font-family: cursive;
+    margin: 0px;
+}
+
+main > .slider > .currentSlide > .slideText > h3 > .keyword{
+    color: #7F6B00;
+}
+
+
+main > .slider > .currentSlide > .slideText > p{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 540;
+    position: relative;
+    padding-left: 50px;
+    right: 55px;
+    border-left: 2px solid #7F6B00;
+}
+
+main > .slider > .currentSlide > .slideText > button{
+    width: 160px;
+    height: 40px;
+    font-family: cursive;
+    font-weight: 900;
+    color: #7F6B00;
+    background-color: transparent;
+    border: 2px solid #7F6B00;
+    border-radius: 3px;
+}
+
+main > .slider > .currentSlide > .slideText > button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #7F6B00;
+}
