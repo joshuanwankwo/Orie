@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Orie</title>
 </head>
+
 <body>
     <!-- Creating the nav -->
     <nav>
@@ -24,11 +26,69 @@
     </nav>
     <main>
         <div class="rank">
-            <span class="bar"></span>
-            <h5 class="number">01</h5>
+            <span id="bar"></span>
+            <h5 id="number">01</h5>
+            <svg id="lightMode" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#7f6b00">
+                        <path
+                            d="M102.77,6.88c-0.9675,0.14781 -1.8275,0.68531 -2.365,1.505l-58.48,86c-0.71219,1.04813
+                             -0.79281,2.40531 -0.20156,3.52063c0.57781,1.12875 1.73344,1.84094
+                              2.99656,1.85437h30.2075l-12.9,61.1675c-0.3225,1.6125 0.5375,3.225
+                               2.05594,3.84313c1.51844,0.63156 3.26531,0.09406 4.17906,-1.26313l55.04,-86c0.65844,-1.06156
+                                0.69875,-2.39187 0.09406,-3.49375c-0.60469,-1.08844 -1.74688,-1.77375
+                                 -2.99656,-1.77375h-26.7675l12.9,-61.1675c0.25531,-1.08844 -0.04031,-2.24406
+                                  -0.79281,-3.07719c-0.7525,-0.83313 -1.85437,-1.24969
+                                   -2.96969,-1.11531zM96.32,26.5525l-10.2125,48.375c-0.22844,1.02125 0.01344,2.08281
+                                    0.65844,2.88906c0.65844,0.81969 1.63938,1.29 2.67406,1.30344h24.725l-41.6025,64.93l9.89,
+                                    -46.9775c0.22844,-1.02125 -0.01344,-2.08281 -0.65844,-2.88906c-0.65844,-0.81969 -1.63938,-1.29
+                                     -2.67406,-1.30344h-27.95z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+            <svg id="darkMode" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#7f6b00">
+                        <path
+                            d="M106.64,13.76c-39.85562,0 -72.24,32.38438 -72.24,72.24c0,39.85563
+                             32.38438,72.24 72.24,72.24c10.27969,0 20.04875,-2.17687 28.90406,
+                             -6.04687c1.24969,-0.55094 2.05594,-1.78719 2.05594,-3.15781c0,-1.37063
+                              -0.80625,-2.60688 -2.05594,-3.15781c-23.07219,-10.07812 -39.22406,-33.05625
+                               -39.22406,-59.8775c0,-26.82125 16.15188,-49.79937 39.22406,-59.8775c1.24969,
+                               -0.55094 2.05594,-1.78719 2.05594,-3.15781c0,-1.37062 -0.80625,-2.60687
+                                -2.05594,-3.15781c-8.85531,-3.87 -18.62438,-6.04688 -28.90406,
+                                -6.04688zM106.64,20.64c6.82625,0 13.26281,1.37063 19.4575,3.3325c-21.67469,
+                                12.47 -36.6575,35.26 -36.6575,62.0275c0,26.7675 14.98281,49.5575 36.6575,62.0275c-6.19469,
+                                1.96188 -12.63125,3.3325 -19.4575,3.3325c-36.13344,0 -65.36,-29.22656 -65.36,-65.36c0,
+                                -36.13344 29.22656,-65.36 65.36,-65.36z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
         </div>
         <div class="slider">
-            <div class="currentSlide">
+            <div class="currentSlide slide1">
+                <div class="slideText">
+                    <h3>
+                        <span class="keyword">Our marks narr</span>ates our path.
+                    </h3>
+                    <p>It's a reminder of everything we've been through, it reminds us of where we are from and where wew are going to.
+                    </p>
+                    <button>Explore</button>
+                </div>
+            </div>
+            <div class="currentSlide slide2">
                 <div class="slideText">
                     <h3>
                         <span class="keyword">Our Arts illlu</span>strates us.
@@ -39,8 +99,29 @@
                     <button>Explore</button>
                 </div>
             </div>
+
+            <div class="currentSlide slide3">
+                <div class="slideText">
+                    <h3>
+                        <span class="keyword">Our Grit is the Diff</span>erent.
+                    </h3>
+                    <p>Our culture is rooted in persistency and hardwork, we only see challenges and not problems.
+                    </p>
+                    <button>Explore</button>
+                </div>
+            </div>
+            <!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="changeSlide(1)"></span>
+    <span class="dot" onclick="changeSlide(2)"></span>
+    <span class="dot" onclick="changeSlide(3)"></span>
+  </div>
+  
         </div>
-        <div class="connect"></div>
+        <div class="roll">
+            <span>&#8595;</span>
+        </div>
     </main>
 </body>
+<script src="script.js"></script>
 </html>

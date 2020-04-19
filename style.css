@@ -23,11 +23,16 @@ nav > .logo{
     width: 45%;
     display: flex;
     align-items: center;
+    /* border: 2px solid green; */
 }
 
 nav > .logo > img{
-    height: 90%;
-    width: 60%;
+    height: 70px;
+    width: 90px;
+    position: relative;
+    left: 80px;
+    padding: 10px;
+ /* border: 2px solid green; */
 }
 
 nav > .logo > img:hover{
@@ -77,7 +82,7 @@ nav > .navigate > ul > li:hover{
 }
 
 main{
-    height: 90vh;
+    height: 92vh;
     width: 100%;
     /* border: 2px solid green; */
     display: flex;
@@ -93,7 +98,7 @@ main > .rank{
     justify-content: center;
 }
 
-main > .rank > .bar{
+main > .rank > #bar{
     height: 1%;
     border: 1px solid #ffffff;
     padding-bottom: 150px;
@@ -102,30 +107,75 @@ main > .rank > .bar{
 main > .rank > h5{
     font-family: cursive;
     font-size: 20px;
+    margin-top: 70px;
+    transform: rotate(270deg);
+}
+
+main > .rank > svg{
+    position: relative;
+    top: 70px;
+}
+
+main > .rank > svg:hover{
+    cursor: pointer;
+}
+
+main > .rank > #darkMode{
+    display: none;
 }
 
 main > .slider{
     height: 100%;
-    width: 84%;
+    width: 90%;
     /* border: 2px solid yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main > .connect{
-    height: 100%;
-    width: 8%;
+main > .roll{
+    height: 85%;
+    width: 6%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
     /* border: 2px solid green; */
+}
+
+main > .roll > span{
+    /* padding: 10px; */
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid #7F6B00;
+    content: "\2193";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 9000;
 }
 
 main > .slider > .currentSlide{
     height: 100%;
     width: 100%;
     /* border: 2px solid white; */
+    display: none;
+}
+
+main > .slider > .slide1{
     background: url(./download.png) no-repeat right;
     background-size: 500px;
-    display: flex;
+}
+
+main > .slider > .slide2{
+    background: url(./necklace.png) no-repeat right;
+    background-size: 500px;
+}
+
+main > .slider > .slide3{
+    background: url(./panther.png) no-repeat right;
+    background-size: 400px;
 }
 
 main > .slider > .currentSlide > .slideText{
@@ -154,7 +204,7 @@ main > .slider > .currentSlide > .slideText > p{
     font-weight: 540;
     position: relative;
     padding-left: 50px;
-    right: 55px;
+    right: 53px;
     border-left: 2px solid #7F6B00;
 }
 
@@ -167,6 +217,7 @@ main > .slider > .currentSlide > .slideText > button{
     background-color: transparent;
     border: 2px solid #7F6B00;
     border-radius: 3px;
+    margin-top: 12px;
 }
 
 main > .slider > .currentSlide > .slideText > button:hover{
@@ -174,3 +225,40 @@ main > .slider > .currentSlide > .slideText > button:hover{
     color: black;
     background-color: #7F6B00;
 }
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #7F6B00;
+  }
+
+
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1}
+  }
+  
