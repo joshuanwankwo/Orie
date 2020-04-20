@@ -1,6 +1,6 @@
 *{
     padding: 0px;
-    /* margin: 0px; */
+    margin: 0px;
 }
 
 body{
@@ -65,7 +65,7 @@ nav > .navigate > ul > li{
 nav > .navigate > ul > li:nth-child(1){
     color: #ffffff;
     /* padding: 10px; */
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #7F6B00;
 }
 
@@ -156,6 +156,12 @@ main > .roll > span{
     font-weight: 9000;
 }
 
+main > .roll > span:hover{
+    cursor: pointer;
+    color: #7F6B00;
+    border: 2px solid white;
+}
+
 main > .slider > .currentSlide{
     height: 100%;
     width: 100%;
@@ -164,18 +170,18 @@ main > .slider > .currentSlide{
 }
 
 main > .slider > .slide1{
-    background: url(./download.png) no-repeat right;
-    background-size: 500px;
+    background: url(./assets/download.png) no-repeat right;
+    background-size: 600px;
 }
 
 main > .slider > .slide2{
-    background: url(./necklace.png) no-repeat right;
-    background-size: 500px;
+    background: url(./assets/sideview.png) no-repeat right;
+    background-size: 650px;
 }
 
 main > .slider > .slide3{
-    background: url(./panther.png) no-repeat right;
-    background-size: 400px;
+    background: url(./assets/warrior.png) no-repeat right;
+    background-size: 450px;
 }
 
 main > .slider > .currentSlide > .slideText{
@@ -247,18 +253,229 @@ main > .slider > .currentSlide > .slideText > button:hover{
   /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 5s;
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.1}
     to {opacity: 1}
   }
   
   @keyframes fade {
-    from {opacity: .9}
+    from {opacity: 0.1}
     to {opacity: 1}
   }
   
+
+#about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid green;   */
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.0),rgb(0, 0, 0, 0.0), rgb(127, 107, 0, 0.7)) ;
+}
+
+#about > #image{
+    height: 85%;
+    width: 40%;
+    /* border: 2px solid #7F6B00; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about > #image > img{
+    height: 90%;
+    width: 80%;
+    border: 20px inset #7F6B00;
+}
+
+#about > #text{
+    height: 85%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 30px; */
+    /* border: 2px solid #7F6B00; */
+}
+
+#about > #text > h1{
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#about > #text > h1 > span{
+    background-color: #7F6B00;
+    color: black;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+#about > #text > p{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 500;
+    position: relative;
+    padding: 20px 0px;
+}
+
+#service {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid blue; */
+    background-color: #7f6b00;
+    background: linear-gradient(rgb(127, 107, 0, 0.7), rgb(127, 107, 0), rgb(127, 107, 0),#ffffff) ;
+}
+
+#service > #image{
+    height: 85%;
+    width: 40%;
+    /* border: 2px solid rgb(0, 127, 42); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service > #image > img{
+    height: 90%;
+    width: 80%;
+    border: 20px outset #7F6B00;
+}
+
+
+#service > #text{
+    height: 85%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 30px; */
+    /* border: 2px solid rgb(0, 19, 127); */
+}
+
+#service > #text > h1{
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#service > #text > h1 > span{
+    background-color: black;
+    color: #7F6B00;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#service > #text > p{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 500;
+    position: relative;
+    padding: 20px 0px;
+}
+
+
+#stats{
+    height: 100vh;
+    width: 100%;
+    color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid blue; */
+    background-color: white !important;
+    background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0.5),rgb(255, 255, 255, 0.5), rgb(0, 0, 0, 0.5)), url(./assets/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#stats > #description{
+    height: 85%;
+    width: 40%;
+    /* border: 2px solid rgb(0, 127, 42); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#stats > #action{
+    height: 85%;
+    width: 40%;
+    /* border: 2px solid rgb(0, 127, 42); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#stats > #description > h1{
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#stats > #description > p{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+    padding: 20px 0px;
+}
+
+#stats > #description > span{
+    width: min-content;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    background-color: #7F6B00;
+}
+
+
+#stats > #action > h1{
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#stats > #action > p{
+    font-size: 20px;
+    text-align: right;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+    padding: 20px 0px;
+}
+
+#stats > #action > button{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    background-color: #7F6B00;
+}
+
+#testimonial{
+    height: 100vh;
+    width: 100%;
+    background-color: #7F6B00 !important;
+    /* background: url(./assets/carved.png) no-repeat; */
+    
+}
