@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url(./assets/wall.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.display{
+    height: 90%;
+    width: 40%;
+}
+
+
+.action{
+    height: 90%;
+    width: 40;
+    background-color: ;
+}
