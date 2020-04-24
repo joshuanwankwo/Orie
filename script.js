@@ -62,3 +62,7 @@ function newSlide(n) {
   dots[slideIndex-1].className += " active";
   document.getElementById("number").innerHTML = '0' + slideIndex
 }
+
+document.getElementById("signin").addEventListener('click', function(){
+  window.location.href = "http://127.0.0.1:5500/signUp.html"
+})
