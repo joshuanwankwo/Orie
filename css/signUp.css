@@ -1,0 +1,372 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url(../assets/wall.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+}
+
+.display{
+    height: 100%;
+    width: 45%;
+    /* background-color: green; */
+
+}
+
+.top{
+    /* border: 2px solid green; */
+    height: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top > h1{
+    /* border: 2px solid green; */
+    font-size: 20px;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: cursive;
+    height: 50%;
+}
+
+.top > h1:hover{
+    cursor: pointer;
+}
+
+#topChild{
+    display: flex;
+    align-items: center;
+    margin-right:   0px;
+    /* border: 2px solid green; */
+    justify-content: flex-end;
+    width: 50%;
+    height: 50%;
+}
+
+#topChild > h5, a{
+    font-size: 13px;
+    font-family: cursive;
+}
+
+#topChild > a{
+    color: #7F6B00;
+    text-decoration: none;
+}
+
+#topChild > a:hover{
+    cursor: pointer;
+}
+
+
+.action{
+    height: 100%;
+    width: 55%;
+    background-color: #f5f5f5;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    height: 85%;
+    width: 60%;
+    /* border: 2px solid green; */
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+form > h1{
+    align-self: flex-start;
+    font-family: cursive;
+    font-size: 30px;
+    padding: 0px 0px 25px 15px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    align-self: flex-start;
+    font-size: 12px;
+    font-family: cursive;
+    font-weight: 800;
+}
+
+input{
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    padding: 0px 0px 0px 10px;
+    background-color: rgba(170, 166, 166, 0.247);
+}
+
+#submit{
+    background-color: black;
+    color: white;
+    width: 90%;
+    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+#check{
+    margin-top: 0px;
+}
+
+#check:hover{
+    cursor: pointer;
+}
+
+.length{
+    width: 100%;
+}
+
+#nameUsername{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+
+#userPassword{
+    width: 90%;
+}
+
+#nameCont, #usernameCont{
+    /* border: 2px solid green; */
+    width: 43%;
+}
+
+
+#nameCont > input, #usernameCont > input{
+    width: 100%;
+}
+
+#or{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#left, #right{
+    border-top: 1px solid gray;
+    height: 1px;
+    width: 40%;
+    padding-right: 5px;
+}
+
+#terms{
+    /* border: 2px solid green; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#terms > h5{
+    font-family: cursive;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+#terms > #check{
+margin-bottom: 15px;
+justify-self: start;
+}
+
+#signInOption{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 20px;
+    /* border: 2px solid green; */
+}
+
+.signin-button {
+    width: 45%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* border: 1px solid green; */
+}
+
+.signin-button:hover{
+    cursor: pointer;
+}
+
+#innerBtn {
+    background: white;
+    color: #000;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    /* border: 1px solid #888; */
+    box-shadow: 0px 0px 1px 1px #cac7c7;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #customBtn:hover {
+    cursor: pointer;
+  }
+
+  #g-logo{
+      height: 40%;
+      width: 15%;
+      /* border: 1px solid green; */
+  }
+
+  #g-text{
+      height: 45%;
+      width: 80%;
+      font-family: "SF Pro Text";
+      font-size: 1.3rem;
+      /* border: 1px solid green; */
+      font-weight: 900;
+      text-align: center;
+  }
+
+#change{
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+@media only screen and (max-width: 1191px){
+    .display{
+        height: 100%;
+        width: 0%;
+        /* background-color: green; */
+    
+    }
+    .action{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 688px){
+    form{
+        height: 85%;
+        width: 80%;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 494px){
+    form{
+        height: 85%;
+        width: 80%;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #signInOption{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20px;
+        /* border: 2px solid green; */
+    }
+
+    .signin-button {
+        width: 90%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* border: 1px solid green; */
+        margin: 10px;
+    }
+
+    #g-text{
+        height: 45%;
+        width: 50%;
+        font-family: "SF Pro Text";
+        font-size: 1.3rem;
+        /* border: 1px solid green; */
+        font-weight: 900;
+        text-align: center;
+    }
+
+    #g-logo{
+        height: 40%;
+        width: 12%;
+        /* border: 1px solid green; */
+    }
+  
+    #topChild{
+        width: 70%;
+    }
+
+}
+
+
+@media only screen and (max-width: 359px){  
+    #topChild{
+        width: 90%;
+    }
+    
+    #g-text{
+        width: 70%;
+    }
+
+    #g-logo{
+        width: 10%;
+    }
+
+}
+
+
+

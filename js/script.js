@@ -1,3 +1,5 @@
+// Function for lightMode
+
 document.getElementById("lightMode").addEventListener('click', ()=>{
     console.log("Clicked");
     document.getElementById('lightMode').style.display = 'none'
@@ -8,6 +10,8 @@ document.getElementById("lightMode").addEventListener('click', ()=>{
 
 })
 
+// Function for DarkMode
+
 document.getElementById("darkMode").addEventListener('click', ()=>{
     console.log("Clicked");
     document.getElementById('darkMode').style.display = 'none'
@@ -16,6 +20,9 @@ document.getElementById("darkMode").addEventListener('click', ()=>{
     document.body.style.backgroundColor = 'black'
     document.body.style.color = 'white'
 })
+
+
+// Creating a slide animation
 
 var slideIndex = 0;
 showSlides();
@@ -65,4 +72,19 @@ function newSlide(n) {
 
 document.getElementById("signin").addEventListener('click', function(){
   window.location.href = "http://127.0.0.1:5500/signUp.html"
+})
+
+
+let showMenu = document.getElementById("showMenuBtn");
+let hideMenu = document.getElementById("hideMenuBtn");
+
+
+showMenu.addEventListener('click', function(){
+  showMenu.style.display = "none";
+  hideMenu.style.display = "flex"
+})
+
+hideMenu.addEventListener('click', function(){
+  showMenu.style.display = "flex";
+  hideMenu.style.display = "none"
 })
