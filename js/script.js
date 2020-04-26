@@ -1,3 +1,21 @@
+
+let showMenu = document.getElementById("showMenuBtn");
+let hideMenu = document.getElementById("hideMenuBtn");
+let mobileNav = document.getElementById("mobile-nav-cont")
+
+
+showMenu.addEventListener('click', function(){
+  showMenu.style.display = "none";
+  hideMenu.style.display = "flex"
+  mobileNav.style.display = "flex";
+})
+
+hideMenu.addEventListener('click', function(){
+  showMenu.style.display = "flex";
+  hideMenu.style.display = "none"
+  mobileNav.style.display = "none";
+})
+
 // Function for lightMode
 
 document.getElementById("lightMode").addEventListener('click', ()=>{
@@ -49,6 +67,7 @@ var slideIndex = 1;
 newSlide(slideIndex);
 
 // Thumbnail image controls
+
 function changeSlide(n) {
   newSlide(slideIndex = n);
 }
@@ -70,21 +89,11 @@ function newSlide(n) {
   document.getElementById("number").innerHTML = '0' + slideIndex
 }
 
-document.getElementById("signin").addEventListener('click', function(){
-  window.location.href = "http://127.0.0.1:5500/signUp.html"
-})
+let currentLink = document.getElementsByClassName("signin");
 
+for( i = 0; i < currentLink.length; i++){
+  currentLink[i].addEventListener('click', function(){
+    window.location.href = "signUp.html"
+  })
+}
 
-let showMenu = document.getElementById("showMenuBtn");
-let hideMenu = document.getElementById("hideMenuBtn");
-
-
-showMenu.addEventListener('click', function(){
-  showMenu.style.display = "none";
-  hideMenu.style.display = "flex"
-})
-
-hideMenu.addEventListener('click', function(){
-  showMenu.style.display = "flex";
-  hideMenu.style.display = "none"
-})

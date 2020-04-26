@@ -22,17 +22,19 @@ body{
     background-color: black;
 }
 
-nav{
+#desktopNav{
     height: 15vh;
     width: 100%;
-    /* background-color: green; */
+    background-color: black;
     /* border: 2px solid green; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 2222;
 }
 
-nav > .logo{
+#desktopNav > .logo{
     height: 80%;
     width: 45%;
     display: flex;
@@ -40,7 +42,7 @@ nav > .logo{
     /* border: 2px solid green; */
 }
 
-nav > .logo > img{
+#desktopNav > .logo > img{
     height: 70px;
     width: 90px;
     position: relative;
@@ -49,18 +51,18 @@ nav > .logo > img{
  /* border: 2px solid green; */
 }
 
-nav > .logo > img:hover{
+#desktopNav > .logo > img:hover{
     cursor: pointer;
 }
 
-nav > .navigate{
+#desktopNav > .navigate{
     height: 80%;
     width: 45%;
     display: flex;
     align-items: center;
 }
 
-nav > .navigate > ul{
+#desktopNav > .navigate > ul{
     height: 100%;
     width: 100%;
     display: flex;
@@ -68,7 +70,7 @@ nav > .navigate > ul{
     align-items: center;
 }
 
-nav > .navigate > ul > li{
+#desktopNav > .navigate > ul > li{
     list-style-type: none;
     font-family: cursive;
     font-size: large;
@@ -76,23 +78,88 @@ nav > .navigate > ul > li{
     padding: 10px;
 }
 
-nav > .navigate > ul > li:nth-child(1){
+#desktopNav > .navigate > ul > li:nth-child(1){
     color: #ffffff;
     /* padding: 10px; */
     border-radius: 3px;
     background-color: #7F6B00;
 }
 
-nav > .navigate > ul > li:nth-child(1):hover{
+#desktopNav > .navigate > ul > li:nth-child(1):hover{
     border-radius: 2px;
     background-color: black;
     cursor: pointer;
 }
 
-nav > .navigate > ul > li:hover{
+#desktopNav > .navigate > ul > li:hover{
     border-left: 5px solid #7F6B00;
     cursor: pointer;
     color: #7F6B00;
+}
+
+/* Styling for mobileNavigation */
+
+#mobile-nav-cont{
+    position: fixed;
+    display: none;
+    height: 93vh;
+    width: 100%;
+    top: 7%;
+    background-color: black;
+    z-index: 2222;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mobile-nav-cont > #mobile-nav-search-cont{
+    height: 6vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0px solid gray;
+}
+
+#mobile-nav-cont > #mobile-nav-search-cont > input{
+    height: 65%;
+    width: 95%;
+    border-radius: 10px;
+    background-color: #1D1D1F;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+#mobile-nav-cont > #mobile-nav-search-cont > input:focus{
+    border: none;
+}
+
+#mobile-nav-cont > #mobile-nav-menu{
+    border: 1px solid green;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+#mobile-nav-cont > #mobile-nav-menu > ul{
+    list-style-type: none;
+    width: 95%;
+    /* border: 1px solid green; */
+}
+
+#mobile-nav-cont > #mobile-nav-menu > ul > li{
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    width: 95%;
+    font-family: cursive;
+    font-size: 12px;
+}
+
+#mobile-nav-cont > #mobile-nav-menu > ul > li:hover{
+    background-color: rgb(46, 45, 45);
+    font-size: 15px;
 }
 
 main{
@@ -538,8 +605,9 @@ main > .slider > .currentSlide > .slideText > button:hover{
 
 
     /* Nav  Responsiveness  */
-    nav{
-        box-shadow: 1px 1px 1px grey;
+
+    #desktopNav{
+        border-bottom: 1px solid gray;
         height: 7vh;
         /* border: 2px solid green; */
         justify-content: space-around;
@@ -548,7 +616,7 @@ main > .slider > .currentSlide > .slideText > button:hover{
 
     /* Creating a custom  Menu and Close Icon */
 
-    nav > #showMenuBtn{
+    #desktopNav > #showMenuBtn{
         /* border: 1px solid green; */
         width: 27%;
         height: 100%;
@@ -557,7 +625,7 @@ main > .slider > .currentSlide > .slideText > button:hover{
         align-items: center;
     }
 
-    nav > #showMenuBtn > #menu-btn-span-cont{
+    #desktopNav > #showMenuBtn > #menu-btn-span-cont{
         /* border: 1px solid green; */
         height: 12%;
         width: 17%;
@@ -567,19 +635,19 @@ main > .slider > .currentSlide > .slideText > button:hover{
         justify-content: center;
     }
 
-    nav > #showMenuBtn > #menu-btn-span-cont > .menu-btn-top{
+    #desktopNav > #showMenuBtn > #menu-btn-span-cont > .menu-btn-top{
         height: 100%;
         width: 100%;
         border-top: 1.4px solid white;
     }
 
-    nav > #showMenuBtn > #menu-btn-span-cont > .menu-btn-bottom{
+    #desktopNav > #showMenuBtn > #menu-btn-span-cont > .menu-btn-bottom{
         height: 100%;
         width: 100%;
         border-bottom: 1.4px solid white;
     }
 
-    nav > #hideMenuBtn{
+    #desktopNav > #hideMenuBtn{
         /* border: 1px solid green; */
         width: 27%;
         height: 100%;
@@ -588,7 +656,7 @@ main > .slider > .currentSlide > .slideText > button:hover{
         align-items: center;
     }
 
-    nav > #hideMenuBtn > #menu-btn-span-cont{
+    #desktopNav > #hideMenuBtn > #menu-btn-span-cont{
         /* border: 1px solid green; */
         height: 0%;
         width: 20%;
@@ -599,7 +667,7 @@ main > .slider > .currentSlide > .slideText > button:hover{
         position: relative;
     }
 
-    nav > #hideMenuBtn > #menu-btn-span-cont > .menu-btn-top{
+    #desktopNav > #hideMenuBtn > #menu-btn-span-cont > .menu-btn-top{
         height: 100%;
         width: 100%;
         transform: rotate(45deg);
@@ -607,7 +675,7 @@ main > .slider > .currentSlide > .slideText > button:hover{
         position: absolute;
     }
 
-    nav > #hideMenuBtn > #menu-btn-span-cont > .menu-btn-bottom{
+    #desktopNav > #hideMenuBtn > #menu-btn-span-cont > .menu-btn-bottom{
         height: 100%;
         width: 100%;
         transform: rotate(-45deg);
@@ -615,20 +683,20 @@ main > .slider > .currentSlide > .slideText > button:hover{
         position: absolute;
     }
 
-    nav > .logo{
+    #desktopNav > .logo{
         /* border: 1px solid green; */
         width: 27%;
         height: 100%;
         justify-content: center;
     }
 
-    nav .logo > img{
+    #desktopNav > .logo > img{
         height: 60%;
         width: 45%;
         left: 0px;
     }
 
-    nav > #basket{
+    #desktopNav > #basket{
         /* border: 1px solid green; */
         width: 27%;
         height: 100%;
@@ -637,13 +705,13 @@ main > .slider > .currentSlide > .slideText > button:hover{
         align-items: center;
     }
 
-    nav > #basket > img{
+    #desktopNav > #basket > img{
         height: 45%;
         width: 22%;
         /* margin-right: 10px; */
     }
 
-    nav > .navigate{
+    #desktopNav > .navigate{
         display: none;
     }
 
