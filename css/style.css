@@ -205,7 +205,7 @@ main > #slider > .rank > svg:hover{
     cursor: pointer;
 }
 
-main > #slider >.rank > #darkMode{
+main > #slider >.rank > .darkMode{
     display: none;
 }
 
@@ -218,7 +218,7 @@ main > #slider{
     align-items: center;
     justify-content: center;
     background: no-repeat right;
-    background-size: 33%;
+    background-size: 600px;
 }
 
 main > .roll{

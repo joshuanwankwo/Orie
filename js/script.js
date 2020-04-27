@@ -7,6 +7,7 @@ let slideNumber = document.getElementsByClassName("number");
 
 
 
+
 showMenu.addEventListener('click', function(){
   showMenu.style.display = "none";
   hideMenu.style.display = "flex"
@@ -19,28 +20,6 @@ hideMenu.addEventListener('click', function(){
   mobileNav.style.display = "none";
 });
 
-// Function for lightMode
-
-document.getElementById("lightMode").addEventListener('click', ()=>{
-    console.log("Clicked");
-    document.getElementById('lightMode').style.display = 'none'
-    document.getElementById('darkMode').style.display = 'block'
-    document.getElementById('bar').style.borderColor = 'black'
-    document.body.style.backgroundColor = 'white'
-    document.body.style.color = 'black'
-
-});
-
-// Function for DarkMode
-
-document.getElementById("darkMode").addEventListener('click', ()=>{
-    console.log("Clicked");
-    document.getElementById('darkMode').style.display = 'none'
-    document.getElementById('lightMode').style.display = 'block'
-    document.getElementById('bar').style.borderColor = 'white'
-    document.body.style.backgroundColor = 'black'
-    document.body.style.color = 'white'
-});
 
 
 // Creating a slide animation
@@ -107,10 +86,18 @@ function newSlide(n) {
   }
 };
 
-let currentLink = document.getElementsByClassName("signin");
+let signupLink = document.getElementsByClassName("signin");
+let loginLink = document.getElementsByClassName("login");
 
-for( i = 0; i < currentLink.length; i++){
-  currentLink[i].addEventListener('click', function(){
+for( i = 0; i < signupLink.length; i++){
+  signupLink[i].addEventListener('click', function(){
     window.location.href = "signUp.html"
   });
 };
+
+for( i = 0; i < loginLink.length; i++){
+  loginLink[i].addEventListener('click', function(){
+    window.location.href = "login.html"
+  });
+};
+

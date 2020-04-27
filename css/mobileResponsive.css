@@ -12,7 +12,7 @@
         height: 7vh;
         /* border: 2px solid green; */
         justify-content: space-around;
-        position: unset;
+        position: fixed;
     }
 
 
@@ -120,7 +120,7 @@
     main{
         /* border: 1px solid green; */
         flex-direction: column;
-        height: 93vh;
+        height: 100vh;
     }
 
     main > #slider > .rank{
@@ -165,7 +165,7 @@
     main > .dotCont > .rank > #bar{
         display: none;
         height: 1%;
-        border: 1px solid #ffffff;
+        /* border: 1px solid #ffffff; */
         padding-bottom: 150px;
     }
     
@@ -181,9 +181,10 @@
         cursor: pointer;
     }
     
-    main > #slider > .dotCont > .mode > #darkMode{
+    main > #slider > .dotCont > .mode > .darkMode{
         display: none;
     }
+
     main > #slider{
         height: 100%;
         flex-direction: column;
@@ -194,6 +195,9 @@
             rgba(0, 0, 0, 0.7)
           ), url(../assets/download.png) no-repeat left;
         background-size: cover;
+        /* border: 2px solid white; */
+        margin-top: 59px;
+
     }
 
     main > #slider > .currentSlide{
