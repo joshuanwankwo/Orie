@@ -4,12 +4,33 @@ let hideMenu = document.getElementById("hideMenuBtn");
 let slideCont = document.getElementById("slider");
 let mobileNav = document.getElementById("mobile-nav-cont");
 let slideNumber = document.getElementsByClassName("number");
+let navSearch = document.getElementById("navSearch");
+let mobileNavMenu = document.getElementById("mobile-nav-menu");
+let searchTitle = document.getElementById("search-title");
+let recentDel = document.getElementById("recent-del");
+let mobileNavSearchResult = document.getElementById("mobile-nav-search-result")
 
 
 
+// NavSearch
 
+navSearch.addEventListener('focus', function(){
+  // console.log("focused");
+  mobileNavMenu.style.display = "none"
+  searchTitle.style.display = "Flex"
+  recentDel.style.display = "flex"
+  mobileNavSearchResult.style.display = "block"
+  
+})
 
-
+navSearch.addEventListener('blur', function(){
+  // console.log("blured");
+  mobileNavMenu.style.display = "flex"
+  searchTitle.style.display = "none"
+  recentDel.style.display = "none"
+  mobileNavSearchResult.style.display = "none"
+  
+})
 
 showMenu.addEventListener('click', function(){
   showMenu.style.display = "none";
@@ -22,6 +43,9 @@ hideMenu.addEventListener('click', function(){
   hideMenu.style.display = "none"
   mobileNav.style.display = "none";
 });
+
+
+
 
 
 
@@ -90,10 +114,25 @@ let newImages = [
         setTimeout(showSlidesWithNoOverlay, 4000); // Change image every 4 seconds
         };
 
-        var screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        function checkWidth() {
+         return  (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
+        }
+
+        // console.log(checkWidth())  
+        
+        function logNewWidthValue(){
+          console.log(checkWidth());
+          setTimeout(logNewWidthValue, 2000)
+        }
+
+        // logNewWidthValue();
+
+        // console.log(logNewWidthValue());
+        
+      
         function determineTypeOfBackground() {
-          if( screenWidth < 500 ){
+          if( checkWidth() < 500 ){
             showSlidesWithOverlay();
           }else{
             showSlidesWithNoOverlay();
@@ -102,7 +141,14 @@ let newImages = [
           // setTimeout(determineTypeOfBackground, 10000) 
         }
 
-        determineTypeOfBackground();
+        determineTypeOfBackground()
+
+        // window.addEventListener('resize', function(){
+        //   console.log("Successfully Resized Device");
+        //   // determineTypeOfBackground();
+          
+        // })
+
 
 
 var slideIndex = 1;
@@ -150,12 +196,31 @@ for( i = 0; i < loginLink.length; i++){
 };
 
 
-function checkWidth() {
-  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-  console.log(width);
 
-  setTimeout(checkWidth, 3000)
+
+let construction = document.getElementsByClassName("construction");
+
+for( i = 0; i < construction.length; i++){
+  construction[i].addEventListener('click', function(){
+    window.location.href = "underConstruction.html"
+  })
 }
 
 
+
+
+// function checkWidth() {
+//   var screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+//   console.log(screenWidth);
+//   setTimeout(checkWidth, 3000)
+// }
+
+
 // checkWidth()
+
+
+function returnNumber(){
+  return 5 + 2;
+}
+
+// console.log(returnNumber())

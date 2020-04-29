@@ -116,27 +116,95 @@ body{
 }
 
 #mobile-nav-cont > #mobile-nav-search-cont{
-    height: 6vh;
+    /* border: 1px solid green; */
     width: 100%;
     background-color: black;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 0px solid gray;
+    border-bottom: 0.1px solid gray;
+    padding: 0px 0px 10px 0px;
+}
+
+#mobile-nav-cont > #mobile-nav-search-cont > #search-title{
+    /* border: 1px solid green; */
+    align-self: start;
+    font-family: cursive;
+    display: none;
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+    margin-left: 10px;
+    display: none;
 }
 
 #mobile-nav-cont > #mobile-nav-search-cont > input{
-    height: 65%;
+    height: 35px;
     width: 95%;
     border-radius: 10px;
     background-color: #1D1D1F;
     padding: 10px;
     border: none;
     color: white;
+    margin-top: 10px;
+    outline: none;
 }
 
 #mobile-nav-cont > #mobile-nav-search-cont > input:focus{
     border: none;
+}
+
+
+#mobile-nav-cont > #mobile-nav-search-result{
+    /* border: 1px solid green; */
+    width: 90%;
+    display: none;
+    justify-content: center;
+    padding: 10px;
+}
+
+#mobile-nav-cont > #mobile-nav-search-result > #recent-del{
+    /* border: 1px solid green; */
+    border-bottom: 1px solid gray;
+    display: none;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-basis: auto;
+    font-family: cursive;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+}
+
+#mobile-nav-cont > #mobile-nav-search-result > #recent-del > #rec{
+    font-size: 30px;
+}
+
+#mobile-nav-cont > #mobile-nav-search-result > #recent-del > #del{
+    color: red;
+}
+
+#mobile-nav-cont > #mobile-nav-search-result > ul{
+    list-style-type: none;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#mobile-nav-cont > #mobile-nav-search-result > ul > li{
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    font-family: cursive;
+    font-size: 50px;
+    /* height: 44px; */
+    font: menu;
+}
+
+#mobile-nav-cont > #mobile-nav-search-result > ul > li:hover{
+    background-color: rgb(82, 78, 78);
 }
 
 #mobile-nav-cont > #mobile-nav-menu{
@@ -144,21 +212,25 @@ body{
     width: 90%;
     display: flex;
     justify-content: center;
-    padding: 0px;
+    padding: 10px;
 }
 
 #mobile-nav-cont > #mobile-nav-menu > ul{
     list-style-type: none;
-    width: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     /* border: 1px solid green; */
 }
 
 #mobile-nav-cont > #mobile-nav-menu > ul > li{
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     border-bottom: 1px solid gray;
-    width: 90%;
+    width: 100%;
     font-family: cursive;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #mobile-nav-cont > #mobile-nav-menu > ul > li:hover{
@@ -221,7 +293,7 @@ main > #slider{
     background-size: 600px;
 }
 
-main > .roll{
+main > #roll{
     height: 85%;
     width: 6%;
     display: flex;
@@ -230,7 +302,7 @@ main > .roll{
     /* border: 2px solid green; */
 }
 
-main > .roll > span{
+main > #roll > span{
     /* padding: 10px; */
     height: 45px;
     width: 45px;
@@ -244,7 +316,7 @@ main > .roll > span{
     font-weight: 9000;
 }
 
-main > .roll > span:hover{
+main > #roll > span:hover{
     cursor: pointer;
     color: #7F6B00;
     border: 2px solid white;

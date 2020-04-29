@@ -253,7 +253,7 @@
         border-left: none;
     }
 
-    main > .roll{
+    main > #roll{
         display: none;
     }
 
